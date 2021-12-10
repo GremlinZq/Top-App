@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const HomePage = () => {
     return (
@@ -10,7 +10,7 @@ const HomePage = () => {
 
             <div>next start</div>
         </>
-    )
-}
+    );
+};
 
 export default HomePage;
