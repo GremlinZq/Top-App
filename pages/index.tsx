@@ -1,6 +1,8 @@
+import { Htag } from "../components";
+
 const HomePage = () => {
     return (
-        <div>Home</div>
+        <Htag Tag='h3'>Курсы по Photoshop</Htag>
     );
 };
 
