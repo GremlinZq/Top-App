@@ -12,7 +12,6 @@
   line-height: 14px;
   font-weight: 400;
 }
-
 .primary {
   &:hover {
     background-color: #5f42ea;
@@ -20,16 +19,37 @@
 
   color: #fff;
   background-color: var(--primary);
+
+  svg {
+    fill: var(--white);
+  }
+
 }
 
 .ghost {
-  &:after {
-    content: '>';
-    margin-left: 11px;
-    color: var(--black);
-    font-weight: 700;
-    text-align: center;
-  }
   border: 1px solid #EBEBEB;
   background-color: transparent;
+  &:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.5s;
+
+    svg {
+      fill: var(--white);
+    }
+  }
+}
+
+.arrow {
+  margin-left: 11px;
+}
+
+.right {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
+.bottom {
+  transform: rotate(90deg);
+  transition: all 0.5s;
 }
