@@ -1,0 +1,23 @@
+.ratingList {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding-right: 5px;
+
+    li:last-child {
+      padding-right: 0;
+    }
+
+    display: inline-block;
+
+    cursor: pointer;
+    list-style: none;
+    fill: #E2E2E2;
+  }
+}
+
+.selected {
+  fill: var(--primary);
+}
