@@ -1,0 +1,53 @@
+.tag {
+  padding: 5px 10px;
+  margin: 0;
+
+  display: inline-block;
+
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+  background-color: transparent;
+
+  text-align: center;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.gray {
+  background-color: var(--gray-light);
+
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--white);
+}
+
+.green {
+  background-color: var(--green-light);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--green);
+}
+
+.primary {
+  background-color: transparent;
+
+  border: 1px solid var(--primary);
+
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.red {
+  background-color: var(--red);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--white);
+}
