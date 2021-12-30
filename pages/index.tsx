@@ -1,24 +1,39 @@
-// Components
-import {Button, Htag, Rating, Tag, Paragraph } from "../components";
+// Core
+import {GetStaticProps, InferGetStaticPropsType} from "next";
+import axios from "axios";
 
-const HomePage = () => {
+//Types
+import {MenuItem} from "../types";
+import Link from "next/link";
+
+
+const HomePage = ({menu}: InferGetStaticPropsType<typeof getStaticProps>) => {
+
+
+    console.log(menu)
+
     return (
-        <>
-            <Htag Tag='h3'>Курсы по Photoshop</Htag>
-            <Button appearance='primary'>Узнать подробнее</Button>
-            <Button appearance='ghost'>Узнать подробнее</Button>
-            <Button>Узнать подробнее</Button>
-            <Paragraph>2132131</Paragraph>
-            <Paragraph size='average'>2132131</Paragraph>
-            <Paragraph size='big'>2132131</Paragraph>
-            <Tag>123</Tag>
-            <Tag bgColor='gray'>123</Tag>
-            <Tag bgColor='green'>123</Tag>
-            <Tag bgColor='primary'>123</Tag>
-            <Tag bgColor='red'>123</Tag>
-            <Rating />
-        </>
+        <div>{menu.map(el => <Link href={`/`}>{el._id.secondCategory}</Link>)}</div>
     );
 };
+
+// getStaticData
+export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
+    const firstCategory = 0;
+
+    const {data: menu} = await axios.post<Array<MenuItem>>(process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/find', {firstCategory})
+
+    return {
+        props: {
+            menu,
+            firstCategory
+        }
+    }
+}
+
+interface HomePageProps {
+    menu: Array<MenuItem>
+    firstCategory: number
+}
 
 export default HomePage;
