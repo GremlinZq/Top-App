@@ -29,7 +29,6 @@
     <inspection_tool class="BreakStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="BreakStatementWithLabelJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ChainedEqualityJS" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="ChainedFunctionCallJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="CheckDtdRefs" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CheckImageSize" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -47,7 +46,6 @@
     <inspection_tool class="ComposeUnknownKeys" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ComposeUnknownValues" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ComposeUnquotedPorts" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="ConditionalExpressionJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ConditionalExpressionWithIdenticalBranchesJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ConfusingFloatingPointLiteralJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ConfusingPlusesOrMinusesJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -245,7 +243,6 @@
     <inspection_tool class="NegatedIfStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedAssignmentJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedConditionalExpressionJS" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="NestedFunctionCallJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NestedFunctionJS" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="m_includeAnonymousFunctions" value="false" />
     </inspection_tool>

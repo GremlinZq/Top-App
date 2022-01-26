@@ -1,7 +1,3 @@
-export interface Id {
-    secondCategory: string
-}
-
 export interface MenuPage {
     alias: string
     category: string
@@ -10,6 +6,8 @@ export interface MenuPage {
 }
 
 export interface MenuItem {
-    _id: Id
+    _id: {
+        secondCategory: string
+    }
     pages: Array<MenuPage>
 }
