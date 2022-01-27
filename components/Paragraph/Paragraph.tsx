@@ -5,7 +5,7 @@ import {DetailedHTMLProps, HTMLAttributes, ReactNode} from "react";
 import cn from 'classnames';
 import styles from './Paragraph.module.scss';
 
-// types
+// interface
 interface ParagraphType extends DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement> {
     size?: 'small' | 'average' | 'big'
     children: ReactNode

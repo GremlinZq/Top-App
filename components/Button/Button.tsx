@@ -8,7 +8,7 @@ import ArrowIcon from './arrow.svg';
 import cn from 'classnames';
 import styles from './Button.module.scss';
 
-// types
+// interface
 interface ButtonType extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
     children?: ReactNode
     appearance?: 'primary' | 'ghost'

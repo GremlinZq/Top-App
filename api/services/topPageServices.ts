@@ -1,7 +1,7 @@
 // Core
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 // Types
-import {MenuItem} from "../../types";
+import {MenuItem} from "../../interface";
 
 export const topPageAPI = createApi({
     reducerPath: 'topPageApi',

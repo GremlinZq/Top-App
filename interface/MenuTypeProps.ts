@@ -1,3 +1,5 @@
+import {TopLevelCategory} from "./PageTypeProps";
+
 export interface MenuPage {
     alias: string
     category: string
@@ -10,4 +12,11 @@ export interface MenuItem {
         secondCategory: string
     }
     pages: Array<MenuPage>
+}
+
+export interface FirstLevelMenuItem {
+    route: string
+    name: string
+    icon: JSX.Element
+    id: TopLevelCategory
 }

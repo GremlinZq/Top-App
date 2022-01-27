@@ -5,7 +5,7 @@ import Link from "next/link";
 import axios from "axios";
 
 //Types
-import { MenuItem, ProductsPageModel, TopPageModel } from "../../types";
+import { MenuItem, ProductsPageModel, TopPageModel } from "../../interface";
 
 // startDataAPI
 const firstCategory = 0;

@@ -1,3 +1,10 @@
+export enum TopLevelCategory {
+    Courses,
+    Services,
+    Books,
+    Products
+}
+
 export interface TopPageHhData {
     count: number
     juniorSalary: number

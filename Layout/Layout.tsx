@@ -9,7 +9,7 @@ import { Footer } from "./Footer";
 import styles from './Layout.module.scss';
 import {Sidebar} from "./Sidebar";
 
-// types
+// interface
 interface LayoutProps {
     children: ReactNode
 }
