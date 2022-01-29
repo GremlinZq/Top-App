@@ -15,4 +15,4 @@ export const Paragraph = ({size = 'average', children, ...props}:ParagraphType) 
     return <p {...props} className={cn(styles.paragraph, styles[size])}>
         {children}
     </p>
-}
+};
